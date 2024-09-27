@@ -1,0 +1,251 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c04e19;
+    padding: 10px 20px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+.content {
+    flex: 1;
+}
+.content h1 {
+    font-size: 80px;
+    color: #f8ebeb;
+}
+.content button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d0174f; 
+    cursor: pointer;
+}
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+.login-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+.signup-btn:hover, .login-btn:hover {
+    opacity: 0.8;
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #d3d3d3;
+}
+
+/* Button Group Styling */
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7600;
+}
+
+/* Image Styling */
+.image-container {
+    max-width: 45%;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

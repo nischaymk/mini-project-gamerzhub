@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Games - Gamerz Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        .game-item {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .game-item button {
+            padding: 10px 15px;
+            background-color: #d13f6a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .game-item button:hover {
+            opacity: 0.8;
+        }
+        
+        .logout-btn {
+            background-color: #d13f6a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Gamerz Hub</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Games List -->
+    <div class="games-container">
+        <!-- Game 1 -->
+        <div class="game-item">
+            <img src="game1.jpg" alt="Game 1">
+            <h3>GRAND THEFT AUTO 5</h3>
+            <a href="https://store.rockstargames.com/game/buy-gta-v" target="_blank">
+                <button>Download</button>
+            </a>
+        </div>
+        
+        <!-- Game 2 -->
+        <div class="game-item">
+            <img src="game2.jpeg" alt="Game 2">
+            <h3>MINECRAFT</h3>
+            <a href="https://www.minecraft.net/en-us/download" target="_blank">
+                <button>Download</button>
+            </a>
+        </div>
+
+        <!-- Repeat for 8 more games -->
+
+        <div class="game-item">
+            <img src="game3.jpeg" alt="Game 10">
+            <h3>PUBG</h3>
+            <a href="https://store.epicgames.com/en-US/p/pubg-59c1d9" target="_blank">
+                <button>Download</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript for Logout -->
+    <script>
+        function logout() {
+            // Clear any session-related data if necessary
+            window.location.href = "index.html"; // Redirect to index.html
+        }
+    </script>
+
+</body>
+</html>
